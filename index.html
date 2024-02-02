@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>ICICI Rewards Centre</title>
+    <style>
+    * {
+        font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+        font-size: 14px;
+    }
+    .container {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 0;
+    margin-left: 0;
+}
+h3{
+    font-size: 20px;
+    font-weight: 700;
+    padding: 0 5px;
+}
+    html{
+    scroll-behavior: smooth;
+    }
+   .bank {
+    font-size: medium;
+    }
+    button{
+        background: orange;
+    color: white;
+    font-weight: bolder;
+    border-radius: 4px;
+    height: 35px;
+    border: none;
+    }
+    .para {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+
+    }
+
+    .para-h3 {
+        text-align: center;
+    width: 70%;
+    }
+
+    .banner-img {
+        position: relative;
+    margin-top: 64px;
+    padding: 5px;
+    height: 190px;
+    width: 100%;
+        }
+
+    p {
+        text-align: center;
+        padding: 0 5px;
+    }
+
+    @media screen and (min-width: 673px) {
+        .banner-img {
+            height: 190px;
+            width: 100%;
+        }
+    }
+    .navbar {
+    background: #fff;
+    transition: all .6s;
+    backface-visibility: hidden;
+    box-shadow: 0 2px 5px 1px rgba(51, 51, 51, 0.5);
+    max-height: 39%;
+}
+ 
+.navbar-dark .navbar-nav {
+    color: #fff;
+    text-transform: capitalize;
+    line-height: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ 
+.navbar-dark .navbar-nav .nav-link {
+    color: #000;
+    /* color: rgba(255, 255, 255, 0.8); */
+    border: 0;
+}
+ 
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #fff;
+}
+ 
+.navbar-dark .navbar-nav .nav-link:focus {
+    color: #fff;
+    outline: 0;
+}
+ 
+ 
+.navbar-dark .navbar-toggler:focus {
+  color: #000;
+    border-color: #fff;
+    outline: none;
+}
+
+.navbar-dark .navbar-toggler {
+    color: #000;
+    border-color: #fff;
+}
+ 
+.navbar-dark .navbar-toggler span {
+    display: block;
+    width: 30px;
+    height: 2px;
+    margin: 6px auto;
+    background: #000;
+    /* transition: all .6s cubic-bezier(0.250, 0.100, 0.250, 1.000); */
+}
+ 
+.navbar-dark .navbar-toggler:hover span,
+.navbar-dark .navbar-toggler:focus span {
+    background: #ccc;
+}
+ 
+/* rotate first span */
+.navbar-dark .navbar-toggler[aria-expanded="true"] span:first-of-type {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+ 
+/* hide second span */
+.navbar-dark .navbar-toggler[aria-expanded="true"] span:nth-of-type(2) {
+    opacity: 0;
+}
+ 
+/* rotate third span */
+.navbar-dark .navbar-toggler[aria-expanded="true"] span:last-of-type {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+ 
+.navbar-dark .navbar-toggler[aria-expanded="false"] span {
+    transform: none;
+    opacity: 1;
+}
+ 
+.navbar-brand {
+    width: 162px;
+    height: 44px;
+    background: url(../img/logo.png) left center no-repeat;
+    border: 0;
+    text-indent: -99999px;
+}
+
+.navbar-dark .navbar-toggler span {
+    display: block;
+    width: 30px;
+    height: 2px;
+    margin: 6px auto;
+    background: #000;
+    transition: all .6s cubic-bezier(0.250, 0.100, 0.250, 1.000);
+}
+
+/* rotate first span */
+.navbar-dark .navbar-toggler[aria-expanded="true"] span:first-of-type {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+ 
+/* hide second span */
+.navbar-dark .navbar-toggler[aria-expanded="true"] span:nth-of-type(2) {
+    opacity: 0;
+}
+ 
+/* rotate third span */
+.navbar-dark .navbar-toggler[aria-expanded="true"] span:last-of-type {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.navbar-dark .navbar-toggler[aria-expanded="false"] span {
+    transform: none;
+    opacity: 1;
+}
+
+button.para-btn {
+    margin-left: 9px;
+    margin-bottom: 10px;
+}
+.para .btn {
+    margin: 20px;
+    background: orange;
+    color: white;
+    font-weight: bolder;
+    border-radius: 4px;
+    height: 35px;
+    border: none;
+}
+button.nav-link.scroll-link.navbar-btn {
+    width: 64px;
+    color: #fff;
+}
+   </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-dark fixed-top">
+            <div class="container">
+                <div class="logo-img"><img src="IBN_BIG.svg" alt=""></div>
+        
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+        
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link scroll-link" href="#top-content">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll-link" href="#section-1">Pay</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll-link" href="#section-2">Rewards</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll-link" href="#section-3">Contacts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll-link" href="#section-4">Limit Increase</a>
+                        </li>
+                        <li class="nav-item">
+                          <button class="nav-link scroll-link navbar-btn" href="#section-5">Log In</button>
+                      </li>
+                    </ul>
+                </div>
+        
+            </div>
+        </nav>
+    </header>
+            
+        
+    <div class="section">
+    <div class="banner-image"><img class="banner-img" src="icici-bank-credit-cards.png" alt=""></div>
+    
+    <h3>Card Control</h3>
+    <p>
+        Enable online and other transaction mode and set
+         desired limits for each type of transactions on
+         your credit card in few clicks.
+    </p>
+    <button class="para-btn" a href="">CARD CONTROL</button>    
+    </div>
+    <div class="para">
+    <h3 class="para-h3">Reward Redemption - Credit Card - ICICI Bank</h3>
+    <p>Earn 500 bonus reward points on Activation + 
+        Rs.5000/- spends in the first 45 days of card set 
+        up. Earn 2 reward points against every Rs.100/- 
+                    of online ...
+    </p>
+    <button class="btn" a href=""> REDEMPTION</button>  
+    <h3>Register NOw - ICICI Bank</h3>
+    <p>Enter your 16 digit ICICI Credit Card number - 
+        YOur Name as it appears on ICICI Credit Card - 
+        Expiry month & year as mentioned on the ICICI Credit  Card - 3-digit ...  </p>
+        <button class="btn register" a href="">REGISTER</button>
+        <h3>Card  Activation</h3>
+        <button class="btn apply-now" a href="">APPLY NOW</button>
+        <h3>Card Deactivation</h3>
+        <button class="btn apply-now-two" a href="">APPLY NOW</button>
+
+    
+    </div>
+    <script>
+sessionStorage.setItem('currentPage', window.location.href);
+
+// Function to load the saved page or a default page
+function loadSavedPage() {
+  const savedPage = sessionStorage.getItem('currentPage') || 'index2.html';
+  window.location.href = savedPage;
+}
+
+// Add event listeners to your buttons
+document.querySelector('.para-btn').addEventListener('click', function () {
+  sessionStorage.setItem('currentPage', 'forms.html');
+  loadSavedPage();
+});
+
+document.querySelector('.para button').addEventListener('click', function () {
+  sessionStorage.setItem('currentPage', 'forms.html');
+  loadSavedPage();
+});
+
+document.querySelector('.navbar-btn').addEventListener('click', function () {
+  sessionStorage.setItem('currentPage', 'forms.html');
+  loadSavedPage();
+});
+
+document.querySelector('.btn.register').addEventListener('click', function () {
+  sessionStorage.setItem('currentPage', 'forms.html');
+  loadSavedPage();
+});
+
+document.querySelector('.btn.apply-now').addEventListener('click', function () {
+  sessionStorage.setItem('currentPage', 'forms.html');
+  loadSavedPage();
+});
+
+document.querySelector('.btn.apply-now-two').addEventListener('click', function () {
+  sessionStorage.setItem('currentPage', 'forms.html');
+  loadSavedPage();
+});
+
+    </script>
+</body>
+
+</html>
